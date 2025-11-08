@@ -65,7 +65,4 @@ document.write("Array : "+arr.join(","));
 
         });
         console.log("factorial of "+n+ "is :"+factorial);
-
-
-
     }
