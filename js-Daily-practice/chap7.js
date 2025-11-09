@@ -47,5 +47,6 @@ q5();
 function q6(){
 //Which of the following is used to look for the farthest ancestor that matches a given css selector
   //option  --> a:matches b: closest c:contains d:none of these
-    //check answer in chap7.html!
+    //Answer : b: closest
+    
 }
