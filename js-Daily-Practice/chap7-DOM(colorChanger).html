@@ -1,0 +1,65 @@
+<!-- Q.Given 5 boxes , assign a random color and a random background to each box using DOM  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        display:flex;
+        flex-wrap:wrap;
+        gap:15px;
+        border:2px solid black;
+        padding:10px;
+        margin-bottom:20px;
+       }            
+       
+       .box1{
+        height:45px;
+        width:45px;
+        border:2px solid black;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-weight:bold;
+       }
+      
+       .box2{
+        height:45px;
+        width:45px;
+        border:2px solid black;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-weight:bold;
+       }
+       
+    
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="box1">Box1</div>
+     <div class="box1">Box2</div>
+     <div class="box1">Box3</div>
+     <div class="box1">Box4</div>
+     <div class="box1">Box5</div>
+    </div>
+
+    <div class="container">
+     <div class="box2">Box1</div>
+     <div class="box2">Box2</div>
+     <div class="box2">Box3</div>
+     <div class="box2">Box4</div>
+     <div class="box2">Box5</div>
+    </div>
+
+    <script src="chap7-DOM(colorChanger).js"></script>
+        
+
+</body>
+</html>

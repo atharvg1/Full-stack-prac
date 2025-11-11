@@ -1,0 +1,168 @@
+*{
+    box-sizing:border-box;
+}
+body{
+ margin:0;
+}
+/*Below code for home.html*/
+header{
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.866);
+    text-align: center;
+    padding: 20px;
+    position:sticky;
+    top:0;
+}
+.sidebar{
+    background-color: lightgrey;
+    float: left;
+    padding: 20px;
+}
+.content{
+    background-color: white;
+    margin-left: 200px;
+    padding: 20px;
+}
+.article{
+    background-color: lightyellow;
+    margin-left: 200px;
+    padding: 20px;
+}
+footer{
+    display: block;
+    clear: both ;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    
+}
+.navbar a:hover{
+    background-color: lightblue;
+    color: black;
+}
+
+header img{
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/*Below code for menu.html*/
+.gallery{
+    display: block;
+    margin: 10px;
+    border: 2px solid #ccc;
+    margin:10px
+
+}
+.gallery img{
+    width: 300px;
+    height: 200px;
+    
+}
+description{
+    font-style: italic;
+    color:rgba(0, 0, 0, 0.812);
+    float: right;
+    overflow:hidden;
+    width: 300px;
+    height: 200px;
+    margin: 10px;   
+    border: 2px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background-color: lightyellow;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-right: 50%;
+    
+}
+description:hover{
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: lightgreen;
+}
+
+@media (max-width:700px){
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    .content{
+        margin-left:0;
+    }
+    .article{
+        margin-left:0;
+    }
+}
+/*Below code for contact.html*/
+.animation a{
+    background-color: black;
+     ;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.animation a:hover{
+    background-color: rgb(134, 131, 131);
+    color: black;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+.animation{
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+.email {
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 45%;
+}
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10% 40% 40%;
+
+    border: none;
+    
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+
+/*Below code for about.html*/
+.about{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin: 20px;
+}
+
