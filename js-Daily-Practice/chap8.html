@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border:2px solid black;
+            margin:10px;
+            padding:10px;
+            text-align:center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"  data-name="ambani">Hey I'm a box1</div>
+        <div class="box2"  data-name="ambani">Hey I'm a box2</div>
+        <script>
+            // Insertion Methods : append , prepend , before , after , insertAdjacentElement , insertAdjacentHTML , insertAdjacentText
+
+            // append : to insert element at the end of the container
+            
+            let div=document.createElement("div");
+            div.innerHTML="hello world created by <b>Atharv</b> using <b>append</b> insertion method ";
+            div.setAttribute("class","greet");
+            document.querySelector(".container").append(div);
+            
+             // prepend : to insert element at the beginning of the container
+            let div2=document.createElement("div");
+            div2.innerHTML="Its div text using  using <b>prepend</b> insertion method";
+            div2.setAttribute("class","prependGreet");
+            document.querySelector(".container").prepend(div2);
+
+            // before : to insert element before the specified element
+            let div3=document.createElement("div");
+            div3.innerHTML="it's div text using <b>before</b> insertion method";
+            div3.setAttribute("class","beforeGreet");
+            document.querySelector(".box2").before(div3);
+
+            // after : to insert element after the specified element
+            let div4=document.createElement("div");
+            div4.innerHTML="It's div text using <b>after</b> insertion method";
+            div4.setAttribute("class","afterGreet");
+            document.querySelector(".box2").after(div4);
+
+            //replaceWith : to replace the specified element with the new elementlet 
+            let div5=document.createElement("p");
+            div5.innerHTML="The <b>box1</b> text replace  using <b>replaceWith</b> insertion method";
+            div5.setAttribute("class","replaceGreet");
+            document.querySelector(".box1").replaceWith(div5);
+
+
+           //End ..
+
+           //insertAdjacentHTML/Text/Element
+           
+           //afterbegin
+           let cout=document.querySelector(".container");
+           cout.insertAdjacentHTML("afterbegin","<p>hello this is para using <b>afterbegin</b> </p>");
+            
+           //afterbegin
+           let cout1=document.querySelector(".container");
+           cout1.insertAdjacentHTML("afterbegin","<p>It's a para created by <b>afterbegin</b></p>");
+           
+           //beforend
+           let cout2=document.querySelector(".container");
+           cout2.insertAdjacentHTML("beforeend","<div>it's div by <b>beforeend</b></div>");
+
+           //afterend
+           let cout3=document.querySelector(".container");
+           cout3.insertAdjacentHTML("afterend","<div>IT's div by <b>afterend</b></div>");
+
+           //AdjacentELEMENT
+
+           let cout4=document.createElement("div");
+           cout4.innerHTML="It's a div by <b>insertAdjacentELEMENT</b>";
+           let newDiv=document.querySelector(".container");
+           newDiv.insertAdjacentElement("beforeend",cout4);
+
+
+
+        </script>
+    </div>
+</body>
+</html>
