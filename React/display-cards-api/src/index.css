@@ -1,0 +1,46 @@
+
+*{
+ margin:0;
+ padding: 0;
+}
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.card{
+ border:2px solid black;
+ max-width: 23vw;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  gap:20px;
+}
+
+ul{
+  border:2px solid black;
+  display: flex;
+  gap: 40px;
+  margin:12px 5px;
+  padding:10px;
+}
+li{
+  list-style-type: none;
+  color: aliceblue;
+}
+li:hover{
+  color:green;
+  cursor:pointer
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+  
+}
+a:hover{
+  color: green;
+}

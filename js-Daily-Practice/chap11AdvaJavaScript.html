@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        /*Q1 : Write a Javascript program to print the folbwing after 2 second delay Hello World */
+
+        //In console
+        function q1() {
+            setTimeout(() => {
+                console.log("hello");
+
+                setTimeout(() => {
+                    console.log("World!");
+                }, 2000);
+
+            });
+
+
+            //OR on page
+            const delay = (time) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(resolve, time);
+                });
+            }
+
+            const showMsg = async () => {
+                let div1 = document.createElement("div");
+                div1.innerHTML = "Hello";
+                document.body.append(div1);
+
+                await delay(2000);
+                let div2 = document.createElement("div");
+                div2.innerHTML = "World!";
+                document.body.append(div2);
+            }
+            showMsg();
+
+        }
+
+        /* Q2 : Write a JavaScript program to find average of numbers in an array using spread Syntax */
+        function q2() {
+            let count = parseInt(prompt("Enter count of total number :"));
+            let arr = [];
+            for (let i = 0; i < count; i++) {
+                let num = parseInt(prompt("Enter a number :" + (i + 1)));
+                arr.push(num);
+            }
+
+            function findAverage(...nums) {
+                let sum = 0;
+                for (let n of nums) {
+                    sum += n;
+                }
+                return sum / nums.length;
+
+            }
+            let average = findAverage(...arr);
+            console.log("Average is:", average);
+            let div = document.createElement("div");
+            div.innerHTML = average;
+            document.body.append(div);
+
+        }
+
+        /* Q3: Write a Javascript function which resolves a 
+        Promise after n seconds. The function takes n 
+        as the parameter. Use an ,IIFE to execute the functions with different values of n*/
+        function q3() {
+            function wait(n) {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        resolve(`resolved after ${n} seconds `);
+                    }, n * 1000);
+                });
+
+            }
+
+            (async function () {
+                console.log(await wait(1));
+                console.log(await wait(4));
+                console.log(await wait(2));
+
+            })();
+
+            //OR on Screen
+
+            let msg=prompt("Enter your msg");
+        let num=parseInt(prompt("enter a seconds for delay :"));
+        function delay(s){
+         return new Promise((resolve)=>{
+            setTimeout(resolve,s*1000);
+         });
+         
+        }
+        async function showMsg(){
+            
+            let div=document.createElement("div");
+            
+            await delay(num);
+             div.innerHTML=msg;
+             document.body.append(div);
+
+        }
+        showMsg();
+        }
+
+        /*Q4: write a Simple interest calculator using Java Script*/
+        function q4(){
+          
+          let p=Number(prompt("Enter  principal amount :"));
+          let r=Number(prompt("Enter rate of interest :"));
+          let t=Number(prompt("Enter time in years :"));
+
+          let SI=(p*r*t)/100;
+          console.log("Simple Interest :"+SI.toFixed(2));
+          totalAmount=p*Math.pow(1+r/100,t);
+          CI=totalAmount-p;
+          console.log("Compound Interest :"+CI.toFixed(2));
+        }
+
+    </script>
+</body>
+
+</html>

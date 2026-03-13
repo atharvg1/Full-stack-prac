@@ -1,0 +1,12 @@
+#bulb{
+    width: 150px;
+    height:150px;
+    background:gray;
+    border-radius:50%;
+    margin:20px;
+}
+
+.glow{
+    background:yellow;
+    box-shadow: 0px 0px 50px orange;
+}

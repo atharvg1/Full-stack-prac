@@ -1,0 +1,17 @@
+.cards{
+ width: 180px;
+ height: 35vh;
+ border:2px solid black;
+ margin: 20px;
+ 
+}
+
+.cards:hover{
+    background-color: red;
+}
+.cards-container{
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
+

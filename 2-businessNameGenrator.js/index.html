@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lets explore a business names for you!</h2>
+    <button onClick="generateName()">Click here</button>
+    <div id="output"></div>
+
+    <script>
+        
+        function word(type,index){
+         if(type=="adj"){
+            if(index ==0)return "Crazy";
+            if(index==1)return "Amazing";
+            return "Fire";
+         }
+         if(type=="shop"){
+            if(index==0)return "Engine";
+            if(index==1)return "Food";
+            return "Garments";
+         }
+         if(type=="other"){
+            if(index==0) return "Bros";
+            if(index==1)return "Limited";
+            return "Hub";
+         }
+        }
+
+        function generateName(){
+            let output="";
+            for (let x=0;x<10;x++){
+               let a = Math.floor(Math.random()*3);
+               let s = Math.floor(Math.random()*3);
+               let o =Math.floor(Math.random()*3);
+
+               let name = word("adj",a)+" "+word("shop",s)+" "+word("other",o) ;
+               output=output+name+"<br>";
+               
+            }
+            document.getElementById("output").innerHTML=output;
+        }
+    </script>
+</body>
+</html>
